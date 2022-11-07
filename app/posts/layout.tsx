@@ -7,7 +7,7 @@ export default function PostLayout({
   return (
     <div>
       {/* <Counter /> */}
-      Home &bull; Posts
+      <h3>Ultimos post </h3>
       {children}
     </div>
   );

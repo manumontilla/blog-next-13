@@ -12,7 +12,7 @@ export default async function Post({ children, params }: any) {
   const post = await fetchSinglePost(id);
   return (
     <article>
-      <h1>{post.title}</h1>
+      <h1 className="text-3xl font-bold underline">{post.title}</h1>
       <p>{post.body}</p>
       <Link href={`/posts/${id}/comments`}> Ver comentarios </Link>
       {children}

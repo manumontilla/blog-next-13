@@ -18,15 +18,18 @@ const links = [
 
 const Header = () => (
   <header className={styles.header}>
-    <nav>
-      <ul>
-        {links.map(({ label, route }) => (
-          <li className={styles.navigation} key={route}>
-            <Link href={route}>{label}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className={styles.headerinner}>
+      <h1>Titulo</h1>
+      <nav>
+        <ul className={styles.nav}>
+          {links.map(({ label, route }) => (
+            <li className={styles.navigation} key={route}>
+              <Link href={route}>{label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   </header>
 );
 
