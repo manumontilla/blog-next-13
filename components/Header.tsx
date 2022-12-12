@@ -19,7 +19,8 @@ const links = [
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.headerinner}>
-      <h1>Titulo</h1>
+      <img src="./logo_transparent.png" className={styles.logo}></img>
+      {/* <h1>Titulo</h1> */}
       <nav>
         <ul className={styles.nav}>
           {links.map(({ label, route }) => (

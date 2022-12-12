@@ -10,7 +10,7 @@ export default function RootLayout({
       <head>
         <title>My blog</title>
       </head>
-      <body class="u-center">
+      <body>
         <Header></Header>
         {children}
       </body>

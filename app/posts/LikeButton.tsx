@@ -9,3 +9,4 @@ export function LikeButton({ id }: any) {
     <button onClick={() => setLiked(!liked)}>{liked ? "❤️" : "💔"}</button>
   );
 }
+c;

@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
+  },
   experimental: {
-    appDir: true
+    appDir: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -17,7 +24,6 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

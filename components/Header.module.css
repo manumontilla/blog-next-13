@@ -20,6 +20,10 @@
     padding: 10px 6px;
 }
 
+.logo {
+    width: 100px;
+}
+
 .navigation {
     display: flex;
     list-style: none;

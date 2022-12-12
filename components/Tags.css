@@ -1,0 +1,34 @@
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+  }
+  
+  .tag + .tag {
+    margin-left: .5em;
+  }
+  
+  .tag-hola {
+    background: #6bf256;
+    background: linear-gradient(to bottom, #5eed2f, #66f256);
+    color: #fafafa;
+  }
+
+  .tag-css {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+  }
+
+  .tag-javascript {
+    background: #5600F2;
+    background: linear-gradient(to bottom, #2F00ED, #5600F2);
+    color: #fafafa;
+  }
+
+  .tag-negocio {
+    background: #569696;
+    background: linear-gradient(to bottom, #2F9696, #569696);
+    color: #fafafa;
+  }

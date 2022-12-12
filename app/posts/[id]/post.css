@@ -1,0 +1,41 @@
+.folio {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondos */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 30px; /* Espacio interno */
+  }
+  
+  .folio::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url(https://via.placeholder.com/50x50) no-repeat; /* Imagen del lápiz */
+    background-size: contain; /* Ajusta la imagen al tamaño del div */
+  }
+
+  .article {
+    width: 60%;
+    margin: auto;
+    border: 1px solid #cbcbcb;
+    padding: 100px;
+  }
+
+.article h1 {
+    color: #111;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+  .article p {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    word-break: break-word;
+}
