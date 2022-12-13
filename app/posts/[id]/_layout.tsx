@@ -10,6 +10,7 @@ const fetchSinglePost = (id: any) => {
 export default async function Post({ children, params }: any) {
   const { id } = params;
   const post = await fetchSinglePost(id);
+
   return (
     <article>
       <h1 className="text-3xl font-bold underline">{post.title}</h1>
