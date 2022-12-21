@@ -1,23 +1,28 @@
 
   .container-post {
     /* width: calc(49% - 2rem);  */
+    
   }
 
 
 
 article {
-  width: calc(52% - 2rem);
+  /* width: calc(52% - 2rem); */
   display: flex;
   /* flex-direction: column; */
-  /* width: 100%; */
+  width: 100%;
   /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
   flex-direction: row;
   overflow: hidden;
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-  background: #ECE9E6;
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  border-radius: 0em;
+  background-color: #fff;
+  /* background-color: white; */
+  /* background: #ECE9E6; */
+  /* background: linear-gradient(to right, #FFFFFF, #ECE9E6); */
   margin-left: 0 !important;
+  /* border: 1px solid #3d405b; */
+  box-shadow: inset 0 0 1px rgba(24, 24, 24, 0.7);
 }
 
 .card {
@@ -28,9 +33,10 @@ margin: auto;
   width: 100%;
 }
 .card:hover {
-transform: scale(1.04); /* Aumenta el tamaño de la card en un 10% */
-opacity: 0.8; /* Reduce la opacidad de la card en un 20% */
-transition: all 0.3s ease-in-out; /* Agrega una transición suave al cambio de estilo */
+/* transform: scale(1.04);  */
+background-color: #80b39b30;
+opacity: 0.8; 
+transition: all 0.3s ease-in-out;
 }
 
 .card_header {
@@ -56,7 +62,8 @@ width: 100%;
 .card_body h2 {
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #444;
+  /* color: #444; */
+  color: #81b29a;
 }
 
 
