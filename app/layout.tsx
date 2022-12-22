@@ -7,9 +7,6 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head>
-        <title>My blog</title>
-      </head>
       <body>
         <Header></Header>
         {children}

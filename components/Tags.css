@@ -1,8 +1,13 @@
+.card_tags{
+  padding-bottom: 7px;
+}
+
 .tag {
     align-self: flex-start;
     padding: .25em .75em;
     border-radius: 1em;
     font-size: .75rem;
+    
   }
   
   .tag + .tag {

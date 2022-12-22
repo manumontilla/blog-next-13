@@ -18,6 +18,7 @@ const links = [
 
 const Header = () => (
   <header className={styles.header}>
+    <title>bichos.dev</title>
     <div className={styles.headerinner}>
       <img src="./logo_transparent.png" className={styles.logo}></img>
       {/* <h1>Titulo</h1> */}

@@ -22,25 +22,35 @@ export async function ListOfPost({ page }: number) {
     <article className="card" key={post.slug}>
       <Link href={`/posts/${post.slug}`}>
         {/* style={{ backgroundImage: `url(${post.image})` }} */}
-        <div className="card_header"></div>
+        <div className="card_header">
+          <Tags tags={post.tags}></Tags>
+
+          {/* <p> {moment(post.date).locale("es").format("LL")}</p> */}
+        </div>
         <div className="card_body">
           <div>
-            <Tags tags={post.tags}></Tags>
             <h2>{post.title}</h2>
-            <p>{post.resume.slice(0, 200) + "..."}</p>
+            <p>
+              {post.resume.length > 200
+                ? post.resume.slice(0, 200) + "..."
+                : post.resume}
+            </p>
+            {/* <p>{post.resume}</p> */}
           </div>
 
-          <div className="card_footer">
-            <div className="user">
-              {/* <img alt="leeerob" src={post.image} className="user_image" /> */}
-              <div className="user__info">
-                {/* <h5>{post.author}</h5> */}
-                <small>
-                  {moment.utc(post.date).local().startOf("seconds").fromNow()}
-                </small>
-              </div>
-            </div>
-          </div>
+          {/* <div className="card_footer"> */}
+          {/* <div className="user"> */}
+          {/* <img alt="leeerob" src={post.image} className="user_image" /> */}
+          {/* <div className="user__info"> */}
+          {/* <h5>{post.author}</h5> */}
+          {/* <small> */}
+          {/* {moment.utc(post.date).local().startOf("seconds").fromNow()} */}
+          {/* {moment.utc(post.date).locale("es").format("LL")} */}
+          {/* {moment(post.date).locale("es").format("LL")} */}
+          {/* </small> */}
+          {/* </div> */}
+          {/* </div> */}
+          {/* </div> */}
         </div>
       </Link>
     </article>
