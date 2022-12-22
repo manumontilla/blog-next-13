@@ -2,7 +2,7 @@ import ListOfPost from "../ListOfPosts/ListOfPost";
 import PaginationOfPosts from "../PaginationOfPosts/PaginationOfPosts";
 import Image from "next/image";
 import styles from "./postPage.module.css";
-import avatar from "../../public/about_me/about_me.png";
+import avatar from "../../public/about_me/about_me.webp";
 
 export async function PostPageComponent(params: any) {
   console.log("component", params.page);
