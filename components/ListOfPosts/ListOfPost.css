@@ -15,7 +15,7 @@ article {
   flex-direction: row;
   overflow: hidden;
   /* box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1); */
-  border-bottom: .1rem solid   rgba(0, 0, 0, 0.1);
+  /* border-bottom: .1rem solid   rgba(0, 0, 0, 0.1); */
   border-radius: 0em;
   background-color: #fff;
   /* background-color: white; */

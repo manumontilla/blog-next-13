@@ -21,7 +21,8 @@ const links = [
 const Header2 = () => (
   <header className={styles.header}>
     <div className={styles.title}>
-      <Image alt="logo" src={logo} className={styles.logo} placeholder="blur" />
+      {/* <Image alt="logo" src={logo} className={styles.logo} placeholder="blur" /> */}
+      BICHOS
     </div>
     <div className={styles.title_options}></div>
     <div className={styles.title_options}> POST </div>
