@@ -1,4 +1,4 @@
-import PostPageComponent from "../../components/PostPage/PostPageComponent";
+import PostPageComponent2 from "../../components/PostPage/PostPageComponent2";
 
 async function PostPage() {
   // console.log("this params", params);
@@ -6,7 +6,8 @@ async function PostPage() {
 
   return (
     <>
-      <PostPageComponent page={1} />
+      <PostPageComponent2 page={1} />
+      {/* <PostPageComponent page={1} /> */}
     </>
   );
   // <PostPageComponent page={1} />

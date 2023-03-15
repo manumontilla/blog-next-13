@@ -14,7 +14,8 @@ article {
   /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
   flex-direction: row;
   overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1); */
+  border-bottom: .1rem solid   rgba(0, 0, 0, 0.1);
   border-radius: 0em;
   background-color: #fff;
   /* background-color: white; */
@@ -22,8 +23,8 @@ article {
   /* background: linear-gradient(to right, #FFFFFF, #ECE9E6); */
   margin-left: 0 !important;
   /* border: 1px solid #3d405b; */
-  box-shadow: inset 0 0 1px rgba(24, 24, 24, 0.7);
-  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 12%);
+  /* box-shadow: inset 0 0 1px rgba(24, 24, 24, 0.7); */
+  /* box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 12%); */
 }
 
 .card {
@@ -41,8 +42,10 @@ padding: 1.4rem;
 /* background-color:linear-gradient(to bottom, #2F00ED, #5600F2); */
 opacity: 0.8; 
 transition: all 0.1s ease-in-out;
-background: #f1a2144f;
-box-shadow: 0px 0px 20px 0px #f1a2144f;
+/* background: #f1a2144f; */
+/* box-shadow: 0px 0px 20px 0px #f1a2144f; */
+background: #ece9e6;
+box-shadow: 0px 0px 10px 0px #9ca3af;
 /* border: 1px solid #b8d0b7; */
 }
 
