@@ -17,10 +17,11 @@
   }
 
   .article {
-    width: 60%;
     margin: auto;
-    border: 1px solid #cbcbcb;
+    border: 1px solid #292929;
     padding: 100px;
+    max-width: 1200px;
+    margin-top: -1px;
   }
 
 .article h1 {

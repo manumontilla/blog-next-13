@@ -32,51 +32,18 @@ export async function PostPageComponent(params: any) {
         </div>
 
         <div className={styles.etiqueta_container}>
-          <a
-            className={styles.etiqueta}
-            style={{
-              // background: "#bcacff",
-              background: "#292929",
-              color: "#fff",
-              fontWeight: "800",
-              // borderColor: "#3100ed",
-            }}
-          >
+          <a className={styles.etiqueta}>
             <h3>.Net</h3>
           </a>
-          <a
-            className={styles.etiqueta}
-            style={{
-              background: "#292929",
-              color: "#fff",
-              fontWeight: "800",
-              // borderColor: "#f3e849",
-            }}
-          >
+          <a className={styles.etiqueta}>
             <h3>Javascript</h3>
           </a>
 
-          <a
-            className={styles.etiqueta}
-            style={{
-              background: "#292929",
-              color: "#fff",
-              fontWeight: "800",
-              // borderColor: "#4f9796",
-            }}
-          >
+          <a className={styles.etiqueta}>
             <h3>Negocio</h3>
           </a>
 
-          <a
-            className={styles.etiqueta}
-            style={{
-              background: "#292929",
-              color: "#fff",
-              fontWeight: "800",
-              // borderColor: "#5cc6f2",
-            }}
-          >
+          <a className={styles.etiqueta}>
             <h3>Formacion</h3>
           </a>
         </div>
