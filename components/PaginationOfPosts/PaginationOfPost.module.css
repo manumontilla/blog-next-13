@@ -14,13 +14,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  
+  align-self: end;
+  height: 60px; 
+   text-align: center;
 }
 
 .pagination_footer div{
   
   border: 1px solid #292929;
-  padding: 16px;
+  
   margin-left: -1px;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -29,7 +31,8 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  
+  font-size:1.1em;
+  justify-content: center;
 }
 
 
@@ -37,6 +40,7 @@
   background-color: white;
   color: #292929;
   margin-left: -1px;
+  
     /* margin-left: -1px; */
     
 

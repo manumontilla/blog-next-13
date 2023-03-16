@@ -28,7 +28,7 @@ article {
 }
 
 .card {
-margin: auto;
+/* margin: auto; */
 padding: 1.4rem;
 }
 
@@ -44,7 +44,8 @@ opacity: 0.8;
 transition: all 0.1s ease-in-out;
 /* background: #f1a2144f; */
 /* box-shadow: 0px 0px 20px 0px #f1a2144f; */
-background: #ece9e6;
+/* background: #ece9e6; */
+background-color: #080f0e14;
 box-shadow: 0px 0px 10px 0px #9ca3af;
 /* border: 1px solid #b8d0b7; */
 }

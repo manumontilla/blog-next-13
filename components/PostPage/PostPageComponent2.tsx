@@ -23,11 +23,62 @@ export async function PostPageComponent(params: any) {
         <div className={styles.about_me}>
           {/* <div className={styles.header}>ABOUT ME</div> */}
           <Image alt="about_me" src={avatar2} placeholder="blur" />
-          {/* <p className={styles.description}>
-            Desarrollador software, gestion de proyectos y desarrollo de equipo,
-            y ahora (por cuarta vez) escritor de blogs
-          </p> */}
-          {/* <p className={styles.signature}>Manuel Montilla</p> */}
+          {
+            <p className={styles.description}>
+              Desarrollador software, gestion de proyectos y desarrollo de
+              equipo, y ahora (por cuarta vez) escritor de blogs
+            </p>
+          }
+        </div>
+
+        <div className={styles.etiqueta_container}>
+          <a
+            className={styles.etiqueta}
+            style={{
+              // background: "#bcacff",
+              background: "#292929",
+              color: "#fff",
+              fontWeight: "800",
+              // borderColor: "#3100ed",
+            }}
+          >
+            <h3>.Net</h3>
+          </a>
+          <a
+            className={styles.etiqueta}
+            style={{
+              background: "#292929",
+              color: "#fff",
+              fontWeight: "800",
+              // borderColor: "#f3e849",
+            }}
+          >
+            <h3>Javascript</h3>
+          </a>
+
+          <a
+            className={styles.etiqueta}
+            style={{
+              background: "#292929",
+              color: "#fff",
+              fontWeight: "800",
+              // borderColor: "#4f9796",
+            }}
+          >
+            <h3>Negocio</h3>
+          </a>
+
+          <a
+            className={styles.etiqueta}
+            style={{
+              background: "#292929",
+              color: "#fff",
+              fontWeight: "800",
+              // borderColor: "#5cc6f2",
+            }}
+          >
+            <h3>Formacion</h3>
+          </a>
         </div>
       </aside>
     </div>
