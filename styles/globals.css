@@ -38,3 +38,28 @@ a {
     background-color: white;
   }
 }
+
+
+    .card {
+        page-transition-tag: listing;
+        contain: paint;
+    }
+
+    ::page-transition-outgoing-image(listing) {
+        animation: 2000ms ease-out both fade-out;
+    }
+
+    ::page-transition-incoming-image(listing) {
+        animation: 2000ms ease-out both fade-in;
+    }
+    
+    @keyframes fade-out {
+        to {
+            opacity: 0;
+        }
+    }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+    }

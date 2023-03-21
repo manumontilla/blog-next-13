@@ -40,3 +40,13 @@
     margin-bottom: 32px;
     word-break: break-word;
 }
+
+  .volver {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .flex {
+    align-items: center;
+    justify-content: center;
+  }

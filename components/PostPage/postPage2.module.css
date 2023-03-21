@@ -40,7 +40,8 @@
     margin-top: -1px;
     margin-bottom: -1px;
     /* background-color: #ac8ccc; */
-    background-color: #2082ca99;
+    /* background-color: #2082ca99; */
+    background-color: #ffeb86d9;
     /* background: linear-gradient(to bottom right, #9a89d9, rgb(69 193 246 / 32%)); */
   /* margin-top: 4rem; */
 }
@@ -156,13 +157,13 @@
     border: 2px solid #eee;
     /* color: #111; */
     display: flex;
-    height: 47px;
+    height: 42px;
     font-size: 1.2rem;
     padding: 0 24px;
     position: relative;
     transition: all 0.2s ease;
 
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 font-weight: 400;
 -webkit-font-smoothing: antialiased;
@@ -176,7 +177,7 @@ background: #292929;
 
 .etiqueta:hover {
   border: 2px solid #111;
-  background-color: #18181861 !important;
+  background-color: #18181899 !important;
   cursor: pointer;
 }
   

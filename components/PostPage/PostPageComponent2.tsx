@@ -30,7 +30,6 @@ export async function PostPageComponent(params: any) {
             </p>
           }
         </div>
-
         <div className={styles.etiqueta_container}>
           <a className={styles.etiqueta}>
             <h3>.Net</h3>
