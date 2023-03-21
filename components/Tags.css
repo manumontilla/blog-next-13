@@ -4,7 +4,7 @@
 
 .tag {
     align-self: flex-start;
-    padding: .25em .75em;
+    padding: .3em 1.4em;
     border-radius: 1em;
     font-size: .75rem;
     
@@ -14,32 +14,46 @@
     margin-left: .5em;
   }
   
-  .tag-hola {
-    background: #6bf256;
-    background: linear-gradient(to bottom, #5eed2f, #66f256);
+  .tag-Hola {
+    /* border: 1px solid #b184c6;
+    color: black; */
+    background-color: #b184c6;
+    /* background: linear-gradient(to bottom, #5eed2f, #66f256); */
     color: #fafafa;
+    
   }
 
-  .tag-css {
+  .tag-Css {
+    /* border: 1px solid #56CCF2;
+    color: black; */
     background: #56CCF2;
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    /* background: linear-gradient(to bottom, #2F80ED, #56CCF2); */
     color: #fafafa;
   }
 
-  .tag-javascript {
-    background: #5600F2;
-    background: linear-gradient(to bottom, #2F00ED, #5600F2);
-    color: #fafafa;
+  .tag-Javascript {
+    /* border: 1px solid #5600F2;
+    color: black; */
+    
+    background: #5600f29e; 
+    /* background: linear-gradient(to bottom, #2F00ED, #5600F2); */
+     color: #fafafa;
   }
 
-  .tag-negocio {
+  .tag-Negocio {
+    /* color: black;
+    border: 1px solid #569696; */
+
     background: #569696;
     background: linear-gradient(to bottom, #2F9696, #569696);
     color: #fafafa;
   }
 
   .tag-IA {
-    background: #ffef40;
-    background: linear-gradient(to bottom, #ffef40, #569696);
+    /* border: 1px solid #ffef40;
+    color: black; */
+    
+    background: #fb7474; 
+     /* background: linear-gradient(to bottom, #ffef40, #569696); */
     color: #fafafa;
   }
