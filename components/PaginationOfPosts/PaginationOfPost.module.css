@@ -35,21 +35,28 @@
   justify-content: center;
 }
 
+.pagination_footer div a {
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .pagination_footer div:first-child {
   background-color: white;
   color: #292929;
   margin-left: -1px;
-  
-    /* margin-left: -1px; */
-    
-
 }
 
+.pagination_footer div:first-child a:hover {
+  background-color: #efefef;
+  
+}
 
 .pagination_footer div:last-child {
   background-color: #292929;
-color: white;
-
-/* margin-left: 0px; */
+  color: white;
+}
+.pagination_footer div:last-child a:hover {
+  background-color: #3b3b3b;
 }
