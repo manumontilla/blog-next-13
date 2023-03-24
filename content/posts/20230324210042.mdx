@@ -1,0 +1,59 @@
+--- 
+title: "Desarrollando aplicaciones web con ASP.NET Core y React"
+date: "2021-09-28"
+tags: ["Net", "JavaScript", "Negocio"]
+resume: "Aprende a desarrollar aplicaciones web con ASP.NET Core y React de manera sencilla y eficiente."
+icon: ""
+image: programmer3.jpg
+author: Manuel Montilla 
+---
+
+# Desarrollando aplicaciones web con ASP.NET Core y React
+
+Si estás buscando una manera sencilla y eficiente de desarrollar aplicaciones web, ASP.NET Core y React pueden ser la combinación perfecta. ASP.NET Core es un framework de desarrollo web de código abierto y multiplataforma creado por Microsoft, mientras que React es un framework de JavaScript para el desarrollo de interfaces de usuario. 
+
+Una de las principales ventajas de ASP.NET Core es que permite desarrollar aplicaciones web de manera rápida y eficiente. Además, cuenta con una amplia variedad de herramientas y librerías que facilitan el desarrollo y la implementación de las aplicaciones. Por su parte, React es una opción popular para el desarrollo de interfaces de usuario gracias a su facilidad de uso y su amplia comunidad de desarrolladores.
+
+Para comenzar a desarrollar aplicaciones web con ASP.NET Core y React, lo primero que debes hacer es instalar los siguientes componentes:
+
+- [.NET Core SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org/en/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+Una vez instalados los componentes, puedes crear un nuevo proyecto en Visual Studio Code y añadir las dependencias necesarias para ASP.NET Core y React. A continuación, puedes comenzar a desarrollar tus componentes de React y conectarlos con el backend de ASP.NET Core.
+
+Por ejemplo, puedes crear un componente de React para mostrar una lista de elementos y utilizar ASP.NET Core para obtener los datos desde el servidor:
+
+```csharp
+[HttpGet]
+public IEnumerable<Item> GetItems()
+{
+    return _context.Items.ToList();
+}
+```
+
+En el componente de React, puedes utilizar la función `fetch` de JavaScript para obtener los datos desde el servidor y mostrarlos en la lista:
+
+```javascript
+function ItemList() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/items')
+      .then(response => response.json())
+      .then(data => {
+        setItems(data);
+      });
+  }, []);
+
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+Con estos ejemplos básicos, puedes comenzar a desarrollar aplicaciones web utilizando ASP.NET Core y React. Recuerda que la clave para un desarrollo eficiente es la práctica, así que no dudes en experimentar y probar nuevas funcionalidades para mejorar tus habilidades en el desarrollo web.
