@@ -1,0 +1,57 @@
+Claro, gracias por el recordatorio. Aquí te dejo un ejemplo de entrada de blog sobre Azure:
+
+---
+title: "Conociendo Azure: una guía para principiantes"
+date: "2021-05-25"
+tags: ["Azure"]
+resume: Una guía básica para comenzar a usar Azure.
+icon: vacio 
+image: azure.jpg
+author: Manuel Montilla
+---
+
+# Conociendo Azure: una guía para principiantes
+
+Azure es una plataforma en la nube de Microsoft que ofrece una amplia variedad de servicios, desde alojamiento de aplicaciones hasta bases de datos y almacenamiento de archivos. Los servicios de Azure se pueden utilizar para crear soluciones escalables, seguras y de alta disponibilidad. En esta entrada de blog, te explicaré los conceptos básicos de Azure y cómo comenzar a utilizarlo.
+
+## Creando una cuenta en Azure
+
+Antes de comenzar a utilizar Azure, necesitas crear una cuenta. Si ya tienes una cuenta de Microsoft (por ejemplo, una cuenta de correo electrónico de Outlook), puedes utilizar esa misma cuenta para acceder a Azure. Si no, puedes registrarte en la página de Azure.
+
+## Creando tus primeros recursos
+
+Una vez que tengas una cuenta de Azure, puedes comenzar a crear tus primeros recursos. Azure ofrece una gran cantidad de servicios, pero para empezar, puedes crear una máquina virtual. Una máquina virtual es como un ordenador en la nube. Te permite ejecutar aplicaciones y servicios como si estuvieran instalados en un ordenador físico.
+
+Para crear una máquina virtual, debes seleccionar la opción "Máquina virtual" en el panel de Azure. Luego, debes seleccionar una imagen de sistema operativo de entre las opciones disponibles. También deberás elegir la cantidad de núcleos de procesador, la cantidad de memoria y el tamaño del disco duro.
+
+## Almacenamiento de archivos
+
+Otro servicio que ofrece Azure es el almacenamiento de archivos. Puedes utilizar Azure para almacenar archivos como imágenes, documentos y vídeos. También puedes utilizarlo para crear copias de seguridad de tus archivos.
+
+Para utilizar el almacenamiento de archivos de Azure, debes crear un contenedor de almacenamiento. Un contenedor de almacenamiento es como una carpeta en la nube. Puedes subir archivos a ese contenedor y descargarlos cuando lo necesites.
+
+## Conclusiones
+
+En esta entrada de blog, te he presentado los conceptos básicos de Azure y cómo comenzar a utilizarlo. Si eres principiante en la plataforma, te recomiendo que comiences creando una cuenta y experimentando con los servicios de Azure. Hay muchas posibilidades y oportunidades para crear soluciones innovadoras y escalables en Azure. ¡Buena suerte!
+
+```csharp
+// Ejemplo de código utilizando Azure Storage SDK para C#
+
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+
+// Conexión a la cuenta de almacenamiento de Azure
+var connectionString = "DefaultEndpointsProtocol=https;AccountName=myaccount;AccountKey=mykey;EndpointSuffix=core.windows.net";
+var storageAccount = CloudStorageAccount.Parse(connectionString);
+
+// Crear un cliente para trabajar con blobs
+var blobClient = storageAccount.CreateCloudBlobClient();
+
+// Crear un contenedor de blobs
+var container = blobClient.GetContainerReference("mycontainer");
+await container.CreateIfNotExistsAsync();
+
+// Subir un archivo al contenedor
+var blob = container.GetBlockBlobReference("myblob");
+await blob.UploadFromFileAsync(@"C:\myfolder\myfile.txt");
+```
