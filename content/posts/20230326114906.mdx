@@ -1,0 +1,55 @@
+--- 
+title: "Cómo utilizar Azure Functions para procesar datos en tiempo real"
+date: "2022-02-01"
+tags: ["Azure", "C#"]
+resume: Aprende a utilizar Azure Functions para procesar datos en tiempo real de manera fácil y sencilla.
+icon: vacio
+image: programmer3.jpg
+author: Manuel Montilla
+---  
+
+# Cómo utilizar Azure Functions para procesar datos en tiempo real
+
+Azure Functions es una herramienta muy útil para procesar datos en tiempo real. Te permite ejecutar código en la nube en respuesta a eventos específicos, como la creación de un archivo en una carpeta de almacenamiento o un mensaje en una cola de Azure. En este artículo, te explicaremos cómo crear una función en Azure Functions para procesar datos en tiempo real.
+
+## Creación de una función en Azure Functions
+
+Para crear una función en Azure Functions, debes tener una suscripción a Azure. Una vez que la tengas, sigue estos pasos:
+
+1. Abre el portal de Azure y haz clic en el botón "Crear un recurso".
+2. Busca "Funciones de Azure" y haz clic en el botón "Crear".
+3. Completa la información requerida, como el nombre de la función y el plan de servicio. 
+4. Selecciona el lenguaje de programación que deseas utilizar, en este caso, C#.
+5. Selecciona el tipo de plantilla de función que deseas utilizar. Hay varias plantillas disponibles, como HTTP Trigger y Timer Trigger.
+6. Haz clic en "Crear" y espera a que se cree la función.
+
+## Procesamiento de datos en tiempo real
+
+Una vez que hayas creado la función, puedes comenzar a procesar datos en tiempo real. Primero, debes configurar la función para que se ejecute en respuesta a un evento específico. Por ejemplo, si deseas procesar datos cada vez que se suba un archivo a una carpeta de almacenamiento de Azure, debes configurar la función para que se ejecute en respuesta a ese evento.
+
+Para procesar los datos, debes escribir el código que se ejecutará cuando se produzca el evento. En C#, puedes utilizar la biblioteca de Azure Storage para leer y escribir en la carpeta de almacenamiento. Por ejemplo, el siguiente código lee un archivo de texto de una carpeta de almacenamiento y lo escribe en otra carpeta de almacenamiento:
+
+```csharp
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Logging;
+using Microsoft.WindowsAzure.Storage.Blob;
+
+public static void Run(CloudBlockBlob myBlob, ILogger log)
+{
+    // Leer archivo de entrada
+    string input = myBlob.DownloadTextAsync().Result;
+
+    // Escribir archivo de salida
+    CloudBlobContainer container = myBlob.Container;
+    CloudBlockBlob outputBlob = container.GetBlockBlobReference("output.txt");
+    outputBlob.UploadTextAsync(input.ToUpper()).Wait();
+
+    log.LogInformation($"C# Blob trigger function processed blob\n Name:{myBlob.Name} \n Size: {myBlob.Properties.Length} Bytes");
+}
+```
+
+Este código utiliza el objeto `CloudBlockBlob` para leer y escribir archivos en una carpeta de almacenamiento. La función se ejecutará cada vez que se agregue un archivo a la carpeta de almacenamiento y procesará el archivo utilizando este código.
+
+## Conclusión
+
+Azure Functions es una herramienta poderosa para procesar datos en tiempo real en la nube. Con su facilidad de uso y la amplia gama de plantillas disponibles, puedes comenzar a utilizar Azure Functions para procesar tus datos en tiempo real en cuestión de minutos. Esperamos que este artículo te haya sido de ayuda en la creación de tus primeras funciones en Azure.
